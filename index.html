@@ -1,207 +1,174 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stockly - Gestão de Inventário</title>
-    <link rel="icon" href="img/icon.ico" type="image/x-icon">
-    <style>
-        :root {
-            --preto: #121212;
-            --preto-claro: #1E1E1E;
-            --roxo: #6A0DAD;
-            --roxo-claro: #8A2BE2;
-            --branco: #F5F5F5;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Roboto, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--preto);
-            color: var(--branco);
-            line-height: 1.6;
-        }
-        
-        .gradiente {
-            background: linear-gradient(135deg, var(--roxo), var(--preto-claro));
-        }
-        
-        header {
-            padding: 2rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 2rem;
-            font-weight: 700;
-            background: linear-gradient(to right, var(--roxo-claro), var(--branco));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 2rem;
-        }
-        
-        nav ul li a {
-            color: var(--branco);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        nav ul li a:hover {
-            color: var(--roxo-claro);
-        }
-        
-        .hero {
-            padding: 5rem 5%;
-            text-align: center;
-        }
-        
-        h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(to right, var(--roxo-claro), var(--branco));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        
-        .subtitle {
-            font-size: 1.5rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            color: #CCCCCC;
-        }
-        
-        .btn-download {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: linear-gradient(to right, var(--roxo), var(--roxo-claro));
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: transform 0.3s, box-shadow 0.3s;
-            margin-top: 1rem;
-            border: none;
-            cursor: pointer;
-            font-size: 1.1rem;
-        }
-        
-        .btn-download:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(106, 13, 173, 0.3);
-        }
-        
-        .about {
-            padding: 5rem 5%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: var(--roxo-claro);
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        
-        .feature-card {
-            background-color: var(--preto-claro);
-            padding: 2rem;
-            border-radius: 10px;
-            transition: transform 0.3s;
-            border-left: 3px solid var(--roxo);
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .feature-card h3 {
-            color: var(--roxo-claro);
-            margin-top: 0;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background-color: var(--preto-claro);
-            margin-top: 3rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stockly - Gestão de Inventário</title>
+  <link rel="icon" href="img/icon.ico" type="image/stockly-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #C2C2C2;
+      color: #1E1E1E;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1E1E1E;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      background-color: #1E1E1E;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .feature {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .feature:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .feature h3 {
+      color: #1E1E1E;
+    }
+    .feature p {
+      color: #333;
+    }
+    footer {
+      background-color: #1E1E1E;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+    a.button {
+      display: inline-block;
+      background-color: #1E1E1E;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    a.button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    .download-button {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .download-text {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 1.1rem;
+      color: #1E1E1E;
+    }
+  </style>
 </head>
 <body>
-    <div class="gradiente">
-        <header>
-            <img src="img/logo.png" alt="Stockly - Gestão de Inventário" width="200" style="filter: invert(50%)">
-            <nav>
-                <ul>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#features">Funcionalidades</a></li>
-                    <li><a href="#contact">Contactos</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <section class="hero">
-            <h1>Gestão de Inventário Simplificada</h1>
-            <p class="subtitle">A solução completa para gerir o seu stock de forma eficiente e intuitiva. Controlo total, relatórios detalhados e integração perfeita com o seu negócio.</p>
-            <!--<a href="/download/Stockly_Gestao_de_Inventario_1.0.0_Setup.exe" class="btn-download" download="Stockly.exe">Download Stockly</a>-->
-            <a href="https://tinyurl.com/4kry3pkn" class="btn-download" download="Stockly">Download Stockly</a>
-        </section>
+  <header>
+    <img src="img/logo.png" alt="Stockly - Gestão de Inventário" width="200" style="filter: invert(100%)">
+    <!--    <h1>Stockly</h1>-->
+    <p>Gestão de Inventário eficiente, moderna e simples</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#funcionalidades">Funcionalidades</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero" id="sobre">
+    <h2>Sobre a Stockly</h2>
+    <p>A Stockly é uma solução inovadora para controlo de inventário, ideal para pequenas e médias empresas que procuram organização, rapidez e simplicidade.</p>
+  </section>
+
+  <section id="funcionalidades">
+    <h2 style="text-align:center">Funcionalidades</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>📦 Gestão de Stock</h3>
+        <p>Controla entradas, saídas e níveis de inventário em tempo real.</p>
+      </div>
+      <div class="feature">
+        <h3>📊 Relatórios Inteligentes</h3>
+        <p>Visualiza relatórios com gráficos e estatísticas úteis.</p>
+      </div>
+      <div class="feature">
+        <h3>🔐 Acesso Seguro</h3>
+        <p>Cria utilizadores com permissões personalizadas.</p>
+      </div>
+      <div class="feature">
+        <h3>☁️ Sincronização Cloud</h3>
+        <p>Acede aos teus dados a partir de qualquer lugar.</p>
+      </div>
     </div>
-    
-    <section id="about" class="about">
-        <h2>Sobre a Stockly</h2>
-        <p>A Stockly nasceu da necessidade de simplificar a gestão de inventário para empresas de todos os tamanhos. Com uma equipa apaixonada por tecnologia e eficiência operacional, desenvolvemos uma solução que combina poder analítico com uma interface intuitiva.</p>
-        
-        <p>Desde 2020, temos ajudado centenas de empresas a optimizar os seus processos de gestão de stock, reduzindo custos e aumentando a produtividade. A nossa missão é fornecer ferramentas que transformam dados em decisões inteligentes.</p>
-    </section>
-    
-    <section id="features" class="about">
-        <h2>Funcionalidades Principais</h2>
-        <div class="features">
-            <div class="feature-card">
-                <h3>Controlo em Tempo Real</h3>
-                <p>Monitore os seus níveis de stock instantaneamente, com actualizações em tempo real e alertas automáticos para níveis baixos.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Relatórios Avançados</h3>
-                <p>Gere relatórios detalhados sobre movimentações, rotatividade de stock e previsões de procura com base em dados históricos.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Integração Total</h3>
-                <p>Conecte-se facilmente com os seus sistemas de POS, e-commerce ou ERP existentes para um fluxo de dados perfeito.</p>
-            </div>
-        </div>
-    </section>
-    
-    <!--<section id="download" class="about" style="text-align: center;">
-        <h2>Pronto para Transformar a Sua Gestão de Inventário?</h2>
-        <p>Descarregue agora a versão gratuita do Stockly e descubra como podemos ajudar o seu negócio a crescer.</p>
-        <a href="teste.txt" download="teste.txt" class="btn-download">Download Stockly</a>
-        <p style="margin-top: 1rem; color: #AAAAAA;">Compatível com Windows, macOS e Linux</p>
-    </section>-->
-    
-    <footer>
-        <p>&copy; 2023 Stockly - Gestão de Inventário. Todos os direitos reservados.</p>
-    </footer>
+    <div class="download-text">
+      <h1>Download</h1>
+      <p>Efetue o download da aplicação e comece já a simplificar a gestão do seu inventário.</p>
+    </div>
+    <div class="download-button">
+      <a class="button" href="download/1mb.exe" download>📥 Download da App</a>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2 style="text-align:center">Contacto</h2>
+    <p style="text-align:center">Entra em contacto connosco através do email: <a href="mailto:info@stockly.pt">info@stockly.pt</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Stockly. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
