@@ -158,21 +158,35 @@
     </div>
     <div class="download-button">
   <a class="button" href="https://tinyurl.com/4kry3pkn" download>
-    <i class="fas fa-download" style="transform: rotate(180deg); color: white;"></i> Download
+    <img src="img/download.png" alt="Download" class="icon"> Download
   </a>
 </div>
-
+    
 <style>
-  .button {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-  }
+ .button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button .icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+
 
   .fas {
     font-size: 16px;
