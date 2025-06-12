@@ -33,6 +33,18 @@
   z-index: 2000;
 }
 
+.logo-image {
+  width: 2000px;  /* Aumente este valor conforme necessário */
+  height: auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Alinhar no centro horizontalmente */
+  padding: 10px;
+}
+
 .cta-buttons {
   display: flex;
   gap: 1rem;
