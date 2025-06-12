@@ -33,6 +33,13 @@
   z-index: 2000;
 }
 
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .modal-dev.show {
   opacity: 1;
   pointer-events: auto;
