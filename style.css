@@ -33,6 +33,25 @@
   z-index: 2000;
 }
 
+.logo-image {
+  width: 2000px;  /* Aumente este valor conforme necessário */
+  height: auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Alinhar no centro horizontalmente */
+  padding: 10px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .modal-dev.show {
   opacity: 1;
   pointer-events: auto;
@@ -54,6 +73,43 @@
   margin-bottom: 1rem;
   color: var(--primary-color);
   font-weight: 800;
+}
+
+.modal-dev {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 27, 75, 0.6);
+  backdrop-filter: blur(4px);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-dev.show {
+  display: flex;
+}
+
+.modal-dev-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+.modal-close-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: #8B5CF6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .modal-dev-content p {
@@ -122,8 +178,8 @@ body::before {
 
 header {
     background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(139, 92, 246, 0.2);
     padding: 1rem 0;
     position: fixed;
@@ -305,8 +361,8 @@ section {
     background: var(--glass-bg);
     padding: 3rem 2rem;
     border-radius: 20px;
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     border: 1px solid var(--glass-border);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -357,8 +413,8 @@ section {
     background: var(--glass-bg);
     padding: 3rem 2.5rem;
     border-radius: 20px;
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     border: 1px solid var(--glass-border);
     margin-bottom: 2rem;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -421,8 +477,8 @@ section {
     border: 1px solid var(--glass-border);
     border-radius: 15px;
     background: var(--glass-bg);
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     color: var(--white);
     font-size: 1rem;
     font-family: inherit;
@@ -510,8 +566,8 @@ section {
     background: var(--glass-bg);
     padding: 2rem;
     border-radius: 15px;
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     border: 1px solid var(--glass-border);
     margin-bottom: 1.5rem;
     transition: all 0.3s ease;
@@ -558,8 +614,8 @@ section {
 
 footer {
     background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     border-top: 1px solid rgba(139, 92, 246, 0.2);
     color: #1F2937;
     text-align: center;
