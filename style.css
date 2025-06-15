@@ -901,7 +901,7 @@ html {
   padding: 1.5rem 2rem;
   text-align: center;
   opacity: 0.7;
-  color: black;
+  color: white;
 }
       :root {
         --primary-color: #00d4ff;
@@ -909,8 +909,8 @@ html {
         --accent-color: #06ffa5;
         --dark-bg: #0a0a0a;
         --darker-bg: #050505;
-        --text-light: #e0e0e0;
-        --text-dim: #a0a0a0;
+        --text-light: black;
+        --text-dim: black;
       }
 
       * {
@@ -1285,7 +1285,6 @@ html {
         max-width: 1200px;
         margin: 0 auto;
       }
-
 
       .footer-section a {
         color: var(--text-dim);
