@@ -853,22 +853,23 @@ html {
 }
 footer {
   background-color: white;
-  color: #6B21A8; /* Roxo forte */
+  color: #6B21A8; /* Roxo escuro */
+  width: 100%;
 }
 
 .footer-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 3rem;
+  padding: 3rem 2rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 2rem 2rem;
 }
 
 .footer-section h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #6B21A8; /* Roxo */
+  color: #6B21A8;
   font-weight: 700;
   background: none;
   -webkit-background-clip: unset;
@@ -902,16 +903,17 @@ footer {
 }
 
 .footer-section ul li a:hover {
-  color: #9333EA; /* Roxo mais claro no hover */
+  color: #9333EA; /* Roxo mais claro */
 }
 
 .footer-bottom {
   border-top: 1px solid #E5E7EB;
   padding: 1.5rem 2rem;
   text-align: center;
-  color: #6B21A8;
   background-color: white;
+  color: #6B21A8;
   opacity: 1;
+  width: 100%;
 }
       :root {
         --primary-color: #00d4ff;
