@@ -851,6 +851,11 @@ html {
     margin-right: auto;
     line-height: 1.6;
 }
+footer {
+  background-color: white;
+  color: #6B21A8; /* Roxo forte */
+}
+
 .footer-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -858,22 +863,27 @@ html {
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 2rem 2rem;
-  background-color: #ffffff; /* Fundo branco */
-  color: #6B21A8; /* Roxo escuro padrão */
 }
 
 .footer-section h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #7C3AED; /* Roxo vibrante */
+  color: #6B21A8; /* Roxo */
   font-weight: 700;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
 }
 
 .footer-section h4 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #9333EA; /* Roxo médio */
+  color: #6B21A8;
   font-weight: 600;
+}
+
+.footer-section p {
+  color: #6B21A8;
 }
 
 .footer-section ul {
@@ -886,21 +896,21 @@ html {
 }
 
 .footer-section ul li a {
-  color: #6B21A8; /* Roxo escuro */
+  color: #6B21A8;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-  color: #A855F7; /* Roxo mais claro ao passar o mouse */
+  color: #9333EA; /* Roxo mais claro no hover */
 }
 
 .footer-bottom {
-  border-top: 1px solid #E5E7EB; /* Cinza claro para separação */
-  background-color: #ffffff; /* Fundo branco */
+  border-top: 1px solid #E5E7EB;
   padding: 1.5rem 2rem;
   text-align: center;
-  color: #6B21A8; /* Texto roxo escuro */
+  color: #6B21A8;
+  background-color: white;
   opacity: 1;
 }
       :root {
