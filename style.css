@@ -851,35 +851,34 @@ html {
     margin-right: auto;
     line-height: 1.6;
 }
-
-/* Estilos para o footer expandido */
 .footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 2rem;
+  background-color: #ffffff; /* Fundo branco */
+  color: #6B21A8; /* Roxo escuro padrão */
 }
+
 .footer-section h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  background: var(--gradient-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #7C3AED; /* Roxo vibrante */
   font-weight: 700;
 }
 
 .footer-section h4 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: var(--primary-light); 
+  color: #9333EA; /* Roxo médio */
   font-weight: 600;
 }
 
 .footer-section ul {
   list-style: none;
+  padding: 0;
 }
 
 .footer-section ul li {
@@ -887,21 +886,22 @@ html {
 }
 
 .footer-section ul li a {
-  color: rgba(255, 255, 255, 0.8); /* Alterado de preto para branco */
+  color: #6B21A8; /* Roxo escuro */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-  color: var(--primary-light);
+  color: #A855F7; /* Roxo mais claro ao passar o mouse */
 }
 
 .footer-bottom {
-  border-top: 1px solid black; 
+  border-top: 1px solid #E5E7EB; /* Cinza claro para separação */
+  background-color: #ffffff; /* Fundo branco */
   padding: 1.5rem 2rem;
   text-align: center;
-  opacity: 0.7;
-  color: white;
+  color: #6B21A8; /* Texto roxo escuro */
+  opacity: 1;
 }
       :root {
         --primary-color: #00d4ff;
@@ -909,8 +909,8 @@ html {
         --accent-color: #06ffa5;
         --dark-bg: #0a0a0a;
         --darker-bg: #050505;
-        --text-light: black;
-        --text-dim: black;
+        --text-light: #e0e0e0;
+        --text-dim: #a0a0a0;
       }
 
       * {
