@@ -1287,7 +1287,7 @@ html {
       }
 
       .footer-section h3, .footer-section h4 {
-        color: var(--primary-color);
+        color: white;
         margin-bottom: 1rem;
       }
 
