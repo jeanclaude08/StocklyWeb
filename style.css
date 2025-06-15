@@ -874,7 +874,7 @@ html {
 .footer-section h4 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: var(--primary-light); /* Mantido se for claro */
+  color: var(--primary-light); 
   font-weight: 600;
 }
 
@@ -893,15 +893,15 @@ html {
 }
 
 .footer-section ul li a:hover {
-  color: var(--primary-light); /* Mantido se for claro */
+  color: var(--primary-light);
 }
 
 .footer-bottom {
-  border-top: 1px solid black; /* Alterado para branco */
+  border-top: 1px solid black; 
   padding: 1.5rem 2rem;
   text-align: center;
   opacity: 0.7;
-  color: black; /* Texto claro */
+  color: black;
 }
       :root {
         --primary-color: #00d4ff;
@@ -1286,10 +1286,6 @@ html {
         margin: 0 auto;
       }
 
-      .footer-section h3, .footer-section h4 {
-        color: white;
-        margin-bottom: 1rem;
-      }
 
       .footer-section a {
         color: var(--text-dim);
